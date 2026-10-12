@@ -94,8 +94,8 @@ PropManage employs an organization-based multi-tenant database design:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/usaamakhadar/digital-rental-collection.git
-cd digital-rental-collection
+git clone https://github.com/usaamakhadar/PropManage.git
+cd PropManage
 ```
 
 ### 2. Install Dependencies
