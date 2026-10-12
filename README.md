@@ -1,38 +1,44 @@
-# PropManage 🏢
+# 🏢 PropManage — Enterprise Property Management & Automated Rent Collection
 
-> **Enterprise Property Management & Automated Digital Rent Collection Platform**  
-> Designed for modern landlords, real estate agencies, and property managers in the Horn of Africa and emerging markets.
+[![Live Demo](https://img.shields.io/badge/Live_Demo-digital--rental--collection.vercel.app-success?style=for-the-badge&logo=vercel)](https://digital-rental-collection.vercel.app/)
+[![Next.js](https://img.shields.io/badge/Next.js_16-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
+[![React](https://img.shields.io/badge/React_19-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)](https://supabase.com/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS_v4-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 
-[![Live Demo](https://img.shields.io/badge/Live_Demo-digital--rental--collection.vercel.app-0066cc?style=for-the-badge&logo=vercel&logoColor=white)](https://digital-rental-collection.vercel.app/)
+> **Live Production Deployment:** [🚀 Launch PropManage](https://digital-rental-collection.vercel.app/)
 
-🔗 **Live Deployment:** [https://digital-rental-collection.vercel.app/](https://digital-rental-collection.vercel.app/)
+Designed for modern landlords, real estate agencies, and property managers in the Horn of Africa and emerging markets.
 
 ---
 
 ## 🌟 Overview
 
-**PropManage** is a modern, high-performance web platform built with **Next.js 16 (App Router)**, **Turbopack**, and **Supabase (PostgreSQL)**. It streamlines multi-tenant property management, lease agreements, tenant onboarding, automated recurring billing, operating expense tracking, and instant mobile-money reconciliation (**Telesom ZAAD & Somtel eDahab**).
+**PropManage** is a modern, high-performance web platform built with Next.js 16 (App Router), Turbopack, and Supabase (PostgreSQL). It streamlines multi-tenant property management, lease agreements, tenant onboarding, automated recurring billing, operating expense tracking, and instant mobile-money reconciliation (Telesom ZAAD & Somtel eDahab).
 
-### ✨ Key Features
+---
 
-- 🏢 **Multi-Tenant Property Management:** Manage unlimited properties, buildings, complexes, and rental units with dynamic occupancy tracking (`VACANT` vs `OCCUPIED`).
-- 🔒 **Atomic Concurrency Protection:** Built-in SQL status locking prevents double-booking race conditions when multiple leasing agents submit simultaneous contracts.
-- 📱 **Mobile Money Automation (ZAAD & eDahab):** Automated webhook listeners ingest mobile money payments, verify telecom cryptographic signatures, match tenant phone numbers, and reconcile invoices in real time.
-- 💵 **Partial & Cash Payment Tracking:** Support for manual cash collections, bank transfers, and partial invoice settlements with live audit trails.
-- 🧾 **Digital Tenant Portal & Receipts:** Shareable magic-link tenant portal (`/portal/[tenantId]`) allowing tenants to view balances, past invoices, and print receipts (`/receipt/[invoiceId]`).
-- 🤖 **Automated Cron Invoicing:** Automated background triggers generate monthly billing across active leases and flag past-due invoices as overdue.
-- 🌐 **Bilingual Interface:** Seamless runtime toggle between **Somali (`so`)** and **English (`en`)**.
-- 💡 **Integrated AI Assistant:** In-app walkthrough guide to assist managers in operating all platform workflows.
-- 📲 **Progressive Web App (PWA):** Installable on Android and iOS devices with offline caching and service worker support.
+## ✨ Key Features
+
+- **🏢 Multi-Tenant Property Management:** Manage unlimited properties, buildings, complexes, and rental units with dynamic occupancy tracking (`VACANT` vs `OCCUPIED`).
+- **🔒 Atomic Concurrency Protection:** Built-in SQL status locking prevents double-booking race conditions when multiple leasing agents submit simultaneous contracts.
+- **📱 Mobile Money Automation (ZAAD & eDahab):** Automated webhook listeners ingest mobile money payments, verify telecom cryptographic signatures, match tenant phone numbers, and reconcile invoices in real time.
+- **💵 Partial & Cash Payment Tracking:** Support for manual cash collections, bank transfers, and partial invoice settlements with live audit trails.
+- **🧾 Digital Tenant Portal & Receipts:** Shareable magic-link tenant portal (`/portal/[tenantId]`) allowing tenants to view balances, past invoices, and print receipts (`/receipt/[invoiceId]`).
+- **🤖 Automated Cron Invoicing:** Automated background triggers generate monthly billing across active leases and flag past-due invoices as overdue.
+- **🌐 Bilingual Interface:** Seamless runtime toggle between Somali (`so`) and English (`en`).
+- **💡 Integrated AI Assistant:** In-app walkthrough guide to assist managers in operating all platform workflows.
+- **📲 Progressive Web App (PWA):** Installable on Android and iOS devices with offline caching and service worker support.
 
 ---
 
 ## 🏗️ Architecture & Tech Stack
 
-```
+```text
 ┌─────────────────────────────────────────────────────────────┐
-│                       Next.js 16 (App Router)               │
-│               Turbopack • React 19 • Tailwind CSS v4        │
+│                   Next.js 16 (App Router)                   │
+│            Turbopack • React 19 • Tailwind CSS v4           │
 ├──────────────────────────────┬──────────────────────────────┤
 │        Frontend Views        │        Backend & APIs        │
 │ • /login (Auth & Onboard)    │ • src/proxy.ts (Proxy)       │
