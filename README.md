@@ -3,6 +3,10 @@
 > **Enterprise Property Management & Automated Digital Rent Collection Platform**  
 > Designed for modern landlords, real estate agencies, and property managers in the Horn of Africa and emerging markets.
 
+[![Live Demo](https://img.shields.io/badge/Live_Demo-digital--rental--collection.vercel.app-0066cc?style=for-the-badge&logo=vercel&logoColor=white)](https://digital-rental-collection.vercel.app/)
+
+🔗 **Live Deployment:** [https://digital-rental-collection.vercel.app/](https://digital-rental-collection.vercel.app/)
+
 ---
 
 ## 🌟 Overview
@@ -131,6 +135,8 @@ npm run dev
 ```
 
 Open [http://localhost:3002](http://localhost:3002) in your browser.
+
+> 🚀 **Live Demo:** You can explore the live deployed platform at [https://digital-rental-collection.vercel.app/](https://digital-rental-collection.vercel.app/).
 
 ---
 
